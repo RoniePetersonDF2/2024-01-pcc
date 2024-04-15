@@ -33,16 +33,8 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 - Git e GitHub
 - Pacote de escritório
 
-
 ## Diagramas
+- Diagrama de casos de uso 
+- Diagrama de classes [(https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/documentos/modelos/README.md)]
+- Diagrama de objetos
 
-### Modelo entidade relacionamento 
-em desenvolvimento.
-
-### Diagrama de classes
-
-![image](https://github.com/RoniePetersonDF2/pcc_sample_2023_02/assets/5281345/276ec9a7-fcf8-43c8-bf2e-786b7aea1cca)
-
-### Diagrama de casos de uso
-
-em desenvolvimento.
