@@ -35,6 +35,6 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 
 ## Diagramas
 - Diagrama de casos de uso 
-- Diagrama de classes [(https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/documentos/modelos/README.md)]
+- [Diagrama de classes](/documentos/modelos/README.md)
 - Diagrama de objetos
 
