@@ -15,23 +15,8 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 - CRUD de respostas
 - CRUD de avaliação dos relatos
 
-## Tecnologias
-- PHP 7.4 ou superior
-- MySQL 5.6 ou superior
-- HTML 5
-- CSS 3
-- Javascript
-- Bibliotecas Javascript (Jquery e SweetAlert2)
-- Google Fonts (Ubuntu)
-
-## Ferramentas de desenvolvimento
-- Visual Studio Code
-- XAMPP
-- PHPMyAdmin
-- MySQL Workbench
-- Astah
-- Git e GitHub
-- Pacote de escritório
+## Tecnologias e Ferramentas de desenvolvimento
+- [Tecnologias e ferramentas](/documentos/tecnologias.md)
 
 ## Diagramas
 - Diagrama de casos de uso 
