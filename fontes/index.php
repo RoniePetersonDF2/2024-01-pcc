@@ -1,44 +1,37 @@
 <?php
-date_default_timezone_set("America/Sao_Paulo");
-include 'src/enumtiporelato.php';
-include 'src/enumtipousuario.php';
-include 'src/enumstatusreclamacao.php';
-include 'src/enumtiporesposta.php';
-include 'src/relato.php';
-include 'src/reclamacao.php';
-include 'src/resposta.php';
-include 'src/usuario.php';
+    $dsn = 'mysql:host=localhost;dbname=ouvir_etc_db;charset=utf8;';
+    $conn = new PDO($dsn, 'root', '');
+    $conn = null;
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-// $sugestao01 = new Relato(
-//     "Novo curso",
-//     "Criação de um novo FIC de jogos digitais",
-//     EnumTipoRelato::SUGESTAO
-// );
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouvidoria ETC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-// $elogio01 = new Relato(
-//     "Parabéns",
-//     "Parabéns pelo seu aniversário",
-//     EnumTipoRelato::ELOGIO
-// );
+<body>
 
-$usuario01 = new Usuario('user01', 'user01@email.com', EnumTipoUsuario::USUARIO);
+    <header>
+        <img src="assets/img/logoetc.png" alt="Imagem logo etc">
 
-$reclamacao01 = new Reclamacao('Ar condicionado', 'Ar condicionado quebrado no lab 30', EnumTipoRelato::RECLAMACAO, $usuario01);
+        <h1>Ouvir <span>ETC</span></h1>
 
-// $resposta01 = n
-echo '<pre>';
-// var_dump($sugestao01, $elogio01, $usuario01, $reclamacao01);
 
-$reclamacao01->setStatusReclamacao(EnumStatusReclamacao::EM_ATENDIMENTO);
-// var_dump($reclamacao01);
+    </header>
 
-$employee01 = new Usuario("employee01", 'employee01@email.com', EnumTipoUsuario::FUNCIONARIO);
+    <main>
 
-$resposta01 = new Resposta("Ar condicionado será trocado essa semana.", $employee01);
-$resposta01->setIsRespostaSatisfatoria(false);
-$reclamacao01->adicionarResposta($resposta01);
 
-$resposta02 = new Resposta("Ainda não foi trocado.", $usuario01);
-$reclamacao01->adicionarResposta($resposta02);
+    </main>
 
-var_dump($reclamacao01);
+    <footer>
+        <p>Desenvolvido para <span class="footer-etc">ETC</span> <span class="footer-ano"> 2024</span></p>
+    </footer>
+
+</body>
+
+</html>
