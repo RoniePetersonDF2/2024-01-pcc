@@ -14,12 +14,12 @@
 body {
   height: 80VH;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 50px;
 }
 
 header {
   display: flex;
   align-items: center;
-  margin: 10px 50px;
   padding-bottom: 20px;
   border-bottom: 1px solid gainsboro;
 }
@@ -40,12 +40,11 @@ header span {
 main {
   width: 100vw;
   height: 75vh;
-
+  margin: 50px;
 }
 .principal {
   display: flex;
   align-items: center;
-  margin: 10px 50px;
 }
 
 .section-left {
