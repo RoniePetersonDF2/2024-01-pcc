@@ -8,10 +8,10 @@ O objetivo geral do projeto é um site de ouvidoria onde a comunidade escolar po
 Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite executar ações específicas sobre suas funcionalidades.
 
 ### Tecnologias e ferramentas
-[Veja aqui](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/tecnologias-ferramentas.md)
+[Veja aqui](tecnologias-ferramentas.md)
 
 ## Diagramas
-[Veja aqui](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/diagramas.md)
+[Veja aqui](diagramas.md)
 
 ### Como fazer a implantação
-[Veja aqui](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/implantacao.md)
+[Veja aqui](implantacao.md)
