@@ -29,11 +29,11 @@ $conn = null;
             <?php foreach ($relatos as $relato) : ?>
                 <li>
                     <h3>
-                        <?= $relato['titulo'] ?>
+                        <?= htmlspecialchars($relato['titulo']) ?>
                     </h3>
 
                     <p>
-                        <?= $relato['descricao'] ?>
+                        <?= htmlspecialchars($relato['descricao']) ?>
                     </p>
                     <a href="#">Editar</a>
                 </li>
