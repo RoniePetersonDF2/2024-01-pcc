@@ -10,7 +10,8 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 ## Diagramas
 
 ### Modelo entidade relacionamento 
+![image](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/documentos/imagens/mer-ouvir-etc-db.png)
 
 ### Diagrama de classes
-![image](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/documentos/modelos/ouvidoria.png)
+![image](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/documentos/imagens/ouvidoria.png)
 ### Diagrama de casos de uso
