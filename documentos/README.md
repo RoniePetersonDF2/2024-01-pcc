@@ -10,7 +10,7 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 ## Diagramas
 
 ### Modelo entidade relacionamento 
-
+[Veja aqui](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/banco-de-dados.md)
 ### Diagrama de classes
-![image](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/documentos/modelos/ouvidoria.png)
+[Veja aqui](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/diagramas.md)
 ### Diagrama de casos de uso
