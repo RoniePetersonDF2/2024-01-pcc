@@ -1,3 +1,8 @@
+<?php
+    $dsn = 'mysql:host=localhost;dbname=ouvir_etc_db;charset=utf8;';
+    $conn = new PDO($dsn, 'root', '');
+    $conn = null;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
