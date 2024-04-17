@@ -1,44 +1,41 @@
-<?php
-date_default_timezone_set("America/Sao_Paulo");
-include 'src/enumtiporelato.php';
-include 'src/enumtipousuario.php';
-include 'src/enumstatusreclamacao.php';
-include 'src/enumtiporesposta.php';
-include 'src/relato.php';
-include 'src/reclamacao.php';
-include 'src/resposta.php';
-include 'src/usuario.php';
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouvidoria ETC</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-// $sugestao01 = new Relato(
-//     "Novo curso",
-//     "Criação de um novo FIC de jogos digitais",
-//     EnumTipoRelato::SUGESTAO
-// );
+<header>
+  <img src="assets/img/logoetc.png" alt="Imagem logo etc">
 
-// $elogio01 = new Relato(
-//     "Parabéns",
-//     "Parabéns pelo seu aniversário",
-//     EnumTipoRelato::ELOGIO
-// );
+  <h1>Ouvir <span>ETC</span></h1>
 
-$usuario01 = new Usuario('user01', 'user01@email.com', EnumTipoUsuario::USUARIO);
+ 
+</header>
 
-$reclamacao01 = new Reclamacao('Ar condicionado', 'Ar condicionado quebrado no lab 30', EnumTipoRelato::RECLAMACAO, $usuario01);
+<main class="principal">
+      <section class="section-left">
+        <h2>Bem vindo a Ouvidoria ETC</h2>
 
-// $resposta01 = n
-echo '<pre>';
-// var_dump($sugestao01, $elogio01, $usuario01, $reclamacao01);
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, omnis? Delectus, dolorum deleniti enim qui possimus distinctio quos consequatur magnam aperiam amet nihil aspernatur optio corrupti aliquam. Voluptates, consectetur rerum.</p>
 
-$reclamacao01->setStatusReclamacao(EnumStatusReclamacao::EM_ATENDIMENTO);
-// var_dump($reclamacao01);
+        <section class="section-btn">
+          <a href="#" class="btn btn-sugestao">Sugestão</a>
+          <a href="#" class="btn btn-elogio">Elogio</a>
+          <a href="#" class="btn btn-reclamacao">Reclamação</a>
+        </section>
+      </section>
+      
+      <section class="section-right">
+        <img src="assets/img/team.png" alt="imagem">
 
-$employee01 = new Usuario("employee01", 'employee01@email.com', EnumTipoUsuario::FUNCIONARIO);
-
-$resposta01 = new Resposta("Ar condicionado será trocado essa semana.", $employee01);
-$resposta01->setIsRespostaSatisfatoria(false);
-$reclamacao01->adicionarResposta($resposta01);
-
-$resposta02 = new Resposta("Ainda não foi trocado.", $usuario01);
-$reclamacao01->adicionarResposta($resposta02);
-
-var_dump($reclamacao01);
+      </section>
+</main>
+<footer>
+        <p>Desenvolvido para <span class="footer-etc">ETC</span> <span class="footer-ano"> 2024</span></p>
+    </footer>
+</body>
+</html>
