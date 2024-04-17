@@ -14,6 +14,8 @@
 body {
   height: 80VH;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -27,7 +29,6 @@ header {
 header img {
   width: 100px;
 }
-
 header h1 {
   color: cornflowerblue;
   margin-left: 20px;
@@ -37,19 +38,16 @@ header span {
   color: coral;
 }
 
-main {
-  width: 100vw;
-  height: 75vh;
-
-}
 .principal {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   margin: 10px 50px;
+  width: 100vw;
+  height: 70vh;
 }
 
 .section-left {
-  width: 55vw;
+  width: 45vw;
   height: 70vh;
   margin-right: 20px;
   padding: 20px;
@@ -64,7 +62,7 @@ main {
 .section-left p {
   font-size: 1.1rem;
   text-align: justify;
-  margin-bottom: 30px;
+  margin-bottom: 3em;
 }
 
 .section-right {
@@ -76,6 +74,33 @@ main {
 .section-right img {
   width: 90%;
   height: 100%;
+}
+
+.section-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.btn {
+  /* background-color: rgb(112, 112, 235); */
+  background-color: #0889e6;
+  width: 180px;
+  padding: 8px 55px;
+  margin-bottom: 5px; 
+  border-radius: 10px;
+  color: azure;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-elogio {
+  background-color: #ee6c4d;
+}
+
+.btn-reclamacao {
+  background-color: #eb3406;
 }
 
 footer {
@@ -96,3 +121,4 @@ footer p {
   color: coral;
   font-weight: 600;
 }
+
