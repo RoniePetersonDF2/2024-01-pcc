@@ -19,5 +19,5 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 - [Tecnologias e ferramentas](/documentos/tecnologias-ferramentas.md)
 
 ## Diagramas
-- [Diagramas](/documentos/modelos/README.md)
+- [Diagramas](/documentos/README.md)
 

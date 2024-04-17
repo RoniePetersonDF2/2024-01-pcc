@@ -10,5 +10,5 @@ Projeto de exemplo criado e disponibilizado pelos professores de LV-II e DIWEB p
 4. Após esse passo, verificar se existe o banco de dados criado.
 5. [Download](https://github.com/RoniePetersonDF2/2024-01-pcc/blob/main/scripts/script.sql)
 
- ![image](https://github.com/RoniePetersonDF2/pcc_sample_2023_02/assets/5281345/cf7af4d0-223c-457a-ba43-cb21c8229ceb)
+
 
