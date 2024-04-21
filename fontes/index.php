@@ -32,6 +32,10 @@
           <a href="#" class="btn btn-elogio">Elogio</a>
           <a href="#" class="btn btn-reclamacao">Reclamação</a>
         </section>
+
+        <section class="section-btn">
+          <a href="relatos.php" class="btn btn-relato">Acessar Relato</a>
+        </section>
       </section>
       
       <section class="section-right">
