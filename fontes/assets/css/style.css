@@ -2,7 +2,13 @@
 
 :root {
     --cor--primaria: #203b4e;
-    --cor--secundaria: #ee6c4d;
+    --cor--laranja: coral;
+    --cor--azul:cornflowerblue;
+    --cor--azul-claro:lightsteelblue; 
+    --cor--roxa: rgb(112, 112, 235);
+    --cor--vermelho: #d1340c;
+    --cor--verde:#118d47;
+    --cor--cinza: gainsboro;
 }
 
 * {
@@ -12,42 +18,47 @@
 }
 
 body {
-    height: 80vh;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 90vh;
 }
-
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    
+}
 header {
     display: flex;
     align-items: center;
     margin: 10px 50px;
     padding-bottom: 20px;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid var(--cor--cinza);
 }
 
 header img {
     width: 100px;
 }
 header h1 {
-    color: cornflowerblue;
+    color: var(--cor--azul);
     margin-left: 20px;
 }
 
 header span {
-    color: coral;
+    color: var(--cor--secundaria);
 }
-
+header a {
+    display: flex;
+}
 .principal {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 50px;
-    width: 100vw;
+    justify-content: space-between;
+    margin: 0 50px;
 }
 
 .section-left {
     width: 45vw;
-    height: 70vh;
     margin-right: 20px;
     padding: 20px;
 }
@@ -55,7 +66,7 @@ header span {
 .section-left h2 {
     margin-bottom: 20px;
     font-size: 2.5rem;
-    color: cornflowerblue;
+    color: var(--cor--azul);
 }
 
 .section-left p {
@@ -65,7 +76,7 @@ header span {
 }
 
 .section-right {
-    width: 45vw;
+    width: 40vw;
     height: 70vh;
     text-align: right;
 }
@@ -81,8 +92,7 @@ header span {
     justify-content: space-between;
 }
 .btn {
-    /* background-color: rgb(112, 112, 235); */
-    background-color: #0889e6;
+    background-color: var(--cor--azul);
     width: 180px;
     padding: 8px 55px;
     margin-bottom: 5px;
@@ -94,15 +104,15 @@ header span {
 }
 
 .btn-elogio {
-    background-color: #ee6c4d;
+    background-color: var(--cor--laranja);
 }
 
 .btn-reclamacao {
-    background-color: #eb3406;
+    background-color: var(--cor--vermelho);
 }
 
 .btn-relato {
-    background-color: #118d47;
+    background-color: var(--cor--verde);
     width: 100%;
     margin-top: 15px;
 }
@@ -110,7 +120,7 @@ header span {
 footer {
     margin: 20px 50px;
     padding-top: 10px;
-    border-top: 1px solid gainsboro;
+    border-top: 1px solid var(--cor--cinza);
 }
 
 footer p {
@@ -119,10 +129,10 @@ footer p {
 
 .footer-etc {
     font-weight: 900;
-    color: cornflowerblue;
+    color: var(--cor--azul);
 }
 .footer-ano {
-    color: coral;
+    color: var(--cor--laranja);
     font-weight: 600;
 }
 
@@ -137,11 +147,11 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid var(--cor--azul);
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: var(--cor--azul-claro) ;
 }
