@@ -1,8 +1,3 @@
-<?php
-    $dsn = 'mysql:host=localhost;dbname=ouvir_etc_db;charset=utf8;';
-    $conn = new PDO($dsn, 'root', '');
-    $conn = null;
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,11 +9,10 @@
 <body>
 
 <header>
-  <img src="assets/img/logoetc.png" alt="Imagem logo etc">
-
-  <h1>Ouvir <span>ETC</span></h1>
-
- 
+    <a href="index.php">
+        <img src="assets/img/logoetc.png" alt="Imagem logo etc">
+        <h1>Ouvir <span>ETC</span></h1>
+    </a> 
 </header>
 
 <main class="principal">
@@ -31,6 +25,10 @@
           <a href="#" class="btn btn-sugestao">Sugestão</a>
           <a href="#" class="btn btn-elogio">Elogio</a>
           <a href="#" class="btn btn-reclamacao">Reclamação</a>
+        </section>
+
+        <section class="section-btn">
+          <a href="relatos.php" class="btn btn-relato">Acessar Relato</a>
         </section>
       </section>
       

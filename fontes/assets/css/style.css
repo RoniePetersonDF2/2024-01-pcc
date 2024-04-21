@@ -1,124 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
 
 :root {
-  --cor--primaria: #203b4e;
-  --cor--secundaria: #ee6c4d;
+    --cor--primaria: #203b4e;
+    --cor--laranja: coral;
+    --cor--azul:cornflowerblue;
+    --cor--azul-claro:lightsteelblue; 
+    --cor--roxa: rgb(112, 112, 235);
+    --cor--vermelho: #d1340c;
+    --cor--verde:#118d47;
+    --cor--cinza: gainsboro;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  height: 80VH;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100vw;
-  height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 98vw;
+    height: 90vh;
 }
-
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    
+}
 header {
-  display: flex;
-  align-items: center;
-  margin: 10px 50px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    margin: 10px 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cor--cinza);
 }
 
 header img {
-  width: 100px;
+    width: 100px;
 }
 header h1 {
-  color: cornflowerblue;
-  margin-left: 20px;
+    color: var(--cor--azul);
+    margin-left: 20px;
 }
 
 header span {
-  color: coral;
+    color: var(--cor--secundaria);
 }
-
+header a {
+    display: flex;
+}
 .principal {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 50px;
-  width: 100vw;
-  height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 50px;
 }
 
 .section-left {
-  width: 45vw;
-  height: 70vh;
-  margin-right: 20px;
-  padding: 20px;
+    width: 45vw;
+    margin-right: 20px;
+    padding: 20px;
 }
 
 .section-left h2 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: cornflowerblue;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: var(--cor--azul);
 }
 
 .section-left p {
-  font-size: 1.1rem;
-  text-align: justify;
-  margin-bottom: 3em;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 3em;
 }
 
 .section-right {
-  width: 45vw;
-  height: 70vh;
-  text-align: right;
+    width: 40vw;
+    height: 70vh;
+    text-align: right;
 }
 
 .section-right img {
-  width: 90%;
-  height: 100%;
+    width: 90%;
+    height: 100%;
 }
 
 .section-btn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .btn {
-  /* background-color: rgb(112, 112, 235); */
-  background-color: #0889e6;
-  width: 180px;
-  padding: 8px 55px;
-  margin-bottom: 5px; 
-  border-radius: 10px;
-  color: azure;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
+    background-color: var(--cor--azul);
+    width: 180px;
+    padding: 8px 55px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
 }
 
 .btn-elogio {
-  background-color: #ee6c4d;
+    background-color: var(--cor--laranja);
 }
 
 .btn-reclamacao {
-  background-color: #eb3406;
+    background-color: var(--cor--vermelho);
+}
+
+.btn-relato {
+    background-color: var(--cor--verde);
+    width: 100%;
+    margin-top: 15px;
 }
 
 footer {
-  margin: 20px 50px;
-  padding-top: 10px;
-  border-top: 1px solid gainsboro;
+    margin: 20px 50px;
+    padding-top: 10px;
+    border-top: 1px solid var(--cor--cinza);
 }
 
 footer p {
-  text-align: right;
+    text-align: right;
 }
 
 .footer-etc {
-  font-weight: 900;
-  color: cornflowerblue;
+    font-weight: 900;
+    color: var(--cor--azul);
 }
 .footer-ano {
-  color: coral;
-  font-weight: 600;
+    color: var(--cor--laranja);
+    font-weight: 600;
 }
 
+/*
+tabelas
+*/
+table {
+    border-collapse: collapse;
+    width: 92vw;
+    margin-top: 20px;
+}
+
+td,
+th {
+    border: 1px solid var(--cor--azul);
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--cor--azul-claro) ;
+}
