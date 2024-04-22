@@ -3,12 +3,13 @@
 :root {
     --cor--primaria: #203b4e;
     --cor--laranja: coral;
-    --cor--azul:cornflowerblue;
-    --cor--azul-claro:lightsteelblue; 
+    --cor--azul: cornflowerblue;
+    --cor--azul-claro: lightsteelblue;
     --cor--roxa: rgb(112, 112, 235);
     --cor--vermelho: #d1340c;
-    --cor--verde:#118d47;
+    --cor--verde: #118d47;
     --cor--cinza: gainsboro;
+    --cor--branco: #fff;
 }
 
 * {
@@ -22,11 +23,11 @@ body {
     width: 98vw;
     height: 90vh;
 }
+
 a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
-    
 }
 header {
     display: flex;
@@ -50,11 +51,14 @@ header span {
 header a {
     display: flex;
 }
+main {
+    margin: 0 50px;
+}
+
 .principal {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 50px;
 }
 
 .section-left {
@@ -63,16 +67,10 @@ header a {
     padding: 20px;
 }
 
-.section-left h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: var(--cor--azul);
-}
-
 .section-left p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: justify;
-    margin-bottom: 3em;
+    margin: 3em 0;
 }
 
 .section-right {
@@ -82,7 +80,7 @@ header a {
 }
 
 .section-right img {
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
@@ -91,18 +89,46 @@ header a {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.btn {
-    background-color: var(--cor--azul);
-    width: 180px;
-    padding: 8px 55px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    color: azure;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
+
+.section-dados {
+    width: 100%;
 }
 
+.section-dados h3,
+p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.titulo-h2 {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 3.5rem;
+    color: var(--cor--azul);
+    width: 100%;
+}
+
+.texto {
+    font-style: italic;
+    word-spacing: 10px;
+    width: 98%;
+    margin-left: 10px;
+}
+
+.section-btn {
+    padding: 20px 0;
+}
+
+.btn {
+    border: none;
+    padding: 15px 95px;
+    border-radius: 8px;
+    background-color: var(--cor--azul);
+    color: var(--cor--branco);
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: center;
+}
 .btn-elogio {
     background-color: var(--cor--laranja);
 }
@@ -112,9 +138,18 @@ header a {
 }
 
 .btn-relato {
+    display: block;
+    margin-top: 1.2em;
     background-color: var(--cor--verde);
-    width: 100%;
-    margin-top: 15px;
+}
+
+.btn-novo {
+    padding: 8px 60px;
+    font-size: 1em;
+}
+
+.btn-align {
+    text-align: right;
 }
 
 footer {
@@ -125,6 +160,7 @@ footer {
 
 footer p {
     text-align: right;
+    margin: 10px 50px;
 }
 
 .footer-etc {
@@ -141,17 +177,111 @@ tabelas
 */
 table {
     border-collapse: collapse;
-    width: 92vw;
+    width: 100%;
     margin-top: 20px;
 }
 
 td,
 th {
     border: 1px solid var(--cor--azul);
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 
+.texto-esquerda {
+    text-align: left;
+}
 tr:nth-child(even) {
-    background-color: var(--cor--azul-claro) ;
+    background-color: var(--cor--azul-claro);
+}
+
+@media (min-width: 800px) and (max-width: 1370px) {
+    .section-left {
+        width: 45%;
+    }
+
+    .section-left p {
+        font-size: 1em;
+        margin: 0 0 20px 0;
+    }
+
+    .section-right {
+        width: 45%;
+    }
+
+    .section-right img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .titulo-h2 {
+        font-size: 2.5em;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .btn-novo {
+        width: 98%;
+    }
+
+    .section-btn {
+        padding: 5px 0;
+    }
+    table {
+        width: 98%;
+    }
+    td,
+    th {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 795px) {
+    main {
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    .section-left {
+        width: 100%;
+    }
+
+    .section-left p {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .section-right {
+        display: none;
+    }
+
+    .titulo-h2 {
+        font-size: 2em;
+    }
+    .texto {
+        width: 90%;
+    }
+    .btn {
+        display: block;
+        width: 98%;
+        margin-top: 5px;
+    }
+
+    .section-btn {
+        padding: 25px 0 0 0;
+    }
+
+    table {
+        width: 98%;
+    }
+    td,
+    th {
+        font-size: 0.6em;
+        padding: 8px;
+    }
 }
