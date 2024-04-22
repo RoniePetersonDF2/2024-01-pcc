@@ -3,11 +3,14 @@ $id = $_GET['id'] ?? 0;
 
 $dsn = 'mysql:host=localhost;dbname=ouvir_etc_db;charset=utf8;';
 $conn = new PDO($dsn, 'root', '');
-$query = "SELECT * FROM ouvir_etc_db.relatos WHERE id = $id;";
-$stmt = $conn->query($query);
-$relato = $stmt->fetch(pdo::FETCH_BOTH);
+$query = "SELECT * FROM ouvir_etc_db.relatos WHERE id = :id;";
+$stmt = $conn->prepare($query);
+$stmt->bindValue(':id', $id);
+$stmt->execute();
+$relato = $stmt->fetch(PDO::FETCH_BOTH);
+
 if ($relato === false) {
-    header('location: relatos.php');
+    header('location: relatos.php?message=Relato não encontrado.');
     exit();
 }
 ?>
