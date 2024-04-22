@@ -23,8 +23,10 @@ $count = 0;
         </a>
     </header>
 
-    <main class="principal">
-        <h2>Bem vindo a Ouvidoria ETC</h2>
+    <main>
+        <p class="btn-align">
+            <a href="#" class="btn btn-novo">Novo</a>
+        </p>
 
         <table>
             <thead>
@@ -47,10 +49,10 @@ $count = 0;
                         <tr>
                             <td><?= $count; ?></td>
                             <td><?= $relato['dataabertura']; ?></td>
-                            <td><?= $relato['titulo']; ?></td>
+                            <td class="texto-esquerda"><?= $relato['titulo']; ?></td>
                             <td><?= $relato['tipo']; ?></td>
                             <td>
-                                <a href="#">Detalhes</a>
+                                <a href="relatos-detalhes.php?id=<?= $relato['id']?>">Detalhes</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
