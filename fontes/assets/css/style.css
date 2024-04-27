@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
-
+@import url('buttons.css');
+@import url('tabelas.css');
+@import url('responsividade.css');
+@import url('forms.css');
 :root {
     --cor--primaria: #203b4e;
     --cor--laranja: coral;
@@ -10,6 +13,7 @@
     --cor--verde: #118d47;
     --cor--cinza: gainsboro;
     --cor--branco: #fff;
+    --cor-amarelo: #FFBF00;
 }
 
 * {
@@ -119,80 +123,31 @@ p {
     padding: 20px 0;
 }
 
-.btn {
-    border: none;
-    padding: 15px 95px;
-    border-radius: 8px;
-    background-color: var(--cor--azul);
-    color: var(--cor--branco);
-    font-weight: 600;
-    font-size: 1.1em;
-    text-align: center;
-}
-.btn-elogio {
-    background-color: var(--cor--laranja);
-}
-
-.btn-reclamacao {
-    background-color: var(--cor--vermelho);
-}
-
-.btn-relato {
-    display: block;
-    margin-top: 1.2em;
-    background-color: var(--cor--verde);
-}
-
-.btn-novo {
-    padding: 8px 60px;
-    font-size: 1em;
-}
-
-.btn-align {
-    text-align: right;
-}
-
 footer {
-    margin: 20px 50px;
-    padding-top: 10px;
+    margin: 5px 50px;
+    padding-top: 5px;
     border-top: 1px solid var(--cor--cinza);
 }
 
 footer p {
     text-align: right;
-    margin: 10px 50px;
+    margin: 5px 30px;
 }
 
 .footer-etc {
     font-weight: 900;
     color: var(--cor--azul);
 }
+
 .footer-ano {
     color: var(--cor--laranja);
     font-weight: 600;
 }
 
-/*
-tabelas
-*/
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-}
-
-td,
-th {
-    border: 1px solid var(--cor--azul);
-    text-align: center;
-    padding: 8px;
-}
-
-.texto-esquerda {
-    text-align: left;
-}
-tr:nth-child(even) {
-    background-color: var(--cor--azul-claro);
+@media (width > 1370px) {
+    .btn-relato {
+        padding: 35px;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1370px) {
@@ -202,10 +157,12 @@ tr:nth-child(even) {
 
     .section-left p {
         font-size: 1em;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
     }
 
     .section-right {
+        display: flex;
+        align-items: center;
         width: 45%;
     }
 
@@ -221,16 +178,13 @@ tr:nth-child(even) {
     .btn {
         display: block;
         width: 100%;
-        margin-top: 5px;
-    }
-
-    .btn-novo {
-        width: 98%;
+        margin-top: 3px;
     }
 
     .section-btn {
         padding: 5px 0;
     }
+    
     table {
         width: 98%;
     }

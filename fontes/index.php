@@ -23,13 +23,13 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, omnis? Delectus, dolorum deleniti enim qui possimus distinctio quos consequatur magnam aperiam amet nihil aspernatur optio corrupti aliquam. Voluptates, consectetur rerum.</p>
 
             <section class="section-btn">
-                <a href="#" class="btn btn-sugestao">Sugestão</a>
-                <a href="#" class="btn btn-elogio">Elogio</a>
+                <a href="relatos-create.php?tipo=sugestao" class="btn btn-sugestao">Sugestão</a>
+                <a href="relatos-create.php?tipo=elogio" class="btn btn-elogio">Elogio</a>
                 <a href="#" class="btn btn-reclamacao">Reclamação</a>
             </section>
 
             <section class="section-btn-relato">
-                <a href="relatos.php" class="btn btn-relato">Acessar Relato</a>
+                <a href="relatos.php" class="btn btn-relato btn-relato-extendido">Acessar Relato</a>
             </section>
         </section>
         

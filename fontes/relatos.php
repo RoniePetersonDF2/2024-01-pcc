@@ -24,10 +24,6 @@ $count = 0;
     </header>
 
     <main>
-        <p class="btn-align">
-            <a href="#" class="btn btn-novo">Novo</a>
-        </p>
-
         <table>
             <thead>
                 <tr>
