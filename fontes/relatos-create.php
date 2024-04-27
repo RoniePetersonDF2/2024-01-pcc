@@ -1,13 +1,19 @@
 <?php
     date_default_timezone_set('America/Sao_Paulo');
+    
     $dataAbertura = date('d/m/Y H:i:s');
-    $tipo = $_GET['tipo'] ?? 'sugestao';
-    $tipoEscolhido =  $tipo != 'sugestao' && $tipo != 'elogio'; 
+    $tipoRelato = $_GET['tipo'] ?? 'sugestao';
+    $tipoEscolhido =  $tipoRelato != 'sugestao' && $tipoRelato != 'elogio'; 
+    
     if ($tipoEscolhido !== false) {
         header('location: index.php?message=Página não encontrada.');
         exit();
     }
-    $tipo = ($tipo === 'sugestao') ?  'Sugestão' : 'Elogio';
+    $tipoRelato = ($tipoRelato === 'sugestao') ?  'Sugestão' : 'Elogio';
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        require 'relatos-store.php';
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,7 +44,7 @@
 
                 <div class="form-one-row">
                     <span class="form-texto-span"><?= $dataAbertura; ?></span>
-                    <span class="form-texto-span"><?= $tipo; ?></span>
+                    <span class="form-texto-span"><?= $tipoRelato; ?></span>
                     <span class="form-texto-span">Aberto</span>
                 </div>
 

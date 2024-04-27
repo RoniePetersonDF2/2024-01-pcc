@@ -23,6 +23,7 @@ if ($relato === false) {
     <title>Ouvidoria ETC</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header>
         <a href="index.php">
@@ -32,24 +33,25 @@ if ($relato === false) {
     </header>
 
     <main>
-        
-        <section class="dados">
+        <section class="section-dados">
             <h2>Título</h2>
             <p class="texto"><?= $relato['titulo']; ?></p>
             <h3>Data de abertura</h3>
             <p class="texto"><?= $relato['dataabertura']; ?></p>
-            <h3 class="texto">Tipo</h3>
+            <h3>Tipo</h3>
             <p class="texto"><?= $relato['tipo']; ?></p>
             <h3>Status</h3>
             <p class="texto"><?= $relato['status']; ?></p>
             <h3>Descrição</h3>
             <p class="texto"><?= $relato['descricao']; ?></p>
-            
-            <br>
-            <a href="relatos.php" class="btn">Voltar</a>
-        </section>    
-        
+
+            <div class="section-btn">
+                <a href="relatos.php" class="btn">Voltar</a>
+            </div>
+        </section>
+
     </main>
+    <br>
     <footer>
         <p>Desenvolvido para <span class="footer-etc">ETC</span> <span class="footer-ano"> 2024</span></p>
     </footer>

@@ -100,7 +100,7 @@ main {
 
 .section-dados h3,
 p {
-    margin: 15px 0;
+    margin: 12px 0 0 0;
     text-align: justify;
 }
 
@@ -120,18 +120,17 @@ p {
 }
 
 .section-btn {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 footer {
-    margin: 5px 50px;
-    padding-top: 5px;
+    margin: 0px 50px;
     border-top: 1px solid var(--cor--cinza);
 }
 
 footer p {
     text-align: right;
-    margin: 5px 30px;
+    margin: 2px 30px;
 }
 
 .footer-etc {
@@ -178,15 +177,11 @@ footer p {
     .btn {
         display: block;
         width: 100%;
-        margin-top: 3px;
+        margin-top: 5px;
     }
 
-    .section-btn {
-        padding: 5px 0;
-    }
-    
     table {
-        width: 98%;
+        width: 100%;
     }
     td,
     th {
@@ -217,9 +212,11 @@ footer p {
     .titulo-h2 {
         font-size: 2em;
     }
+    
     .texto {
         width: 90%;
     }
+    
     .btn {
         display: block;
         width: 98%;
