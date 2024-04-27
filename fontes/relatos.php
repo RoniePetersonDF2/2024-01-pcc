@@ -48,7 +48,7 @@ $count = 0;
                             <td class="texto-esquerda"><?= $relato['titulo']; ?></td>
                             <td><?= $relato['tipo']; ?></td>
                             <td>
-                                <a href="relatos-detalhes.php?id=<?= $relato['id']?>">Detalhes</a>
+                                <a href="relatos-show.php?id=<?= $relato['id']?>">Detalhes</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
