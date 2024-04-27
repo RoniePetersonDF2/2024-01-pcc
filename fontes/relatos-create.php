@@ -70,9 +70,11 @@
                         ></textarea>            
                 </div>
                 
+                <div class="section-btn">
+                    <button class="btn btn-salvar">Salvar</button>
+                    <a href="index.php" class="btn ">Voltar</a>
+                </div>
                 <br>
-                <button class="btn btn-relato">Salvar</button>
-                <a href="index.php" class="btn ">Voltar</a>
             </form>
         
     </main>

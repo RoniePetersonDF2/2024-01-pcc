@@ -33,3 +33,6 @@
     text-align: right;
 }
 
+.btn-salvar {
+    background-color: var(--cor--verde);    
+}
