@@ -28,23 +28,21 @@
     <header>
         <a href="index.php">
             <img src="assets/img/logoetc.png" alt="Imagem logo etc">
-            <h1>Ouvir <span>ETC</span></h1>
+            <h1>Ouvir <span class="caixa-laranja">ETC</span></h1>
         </a>
     </header>
 
     <main>
-        <h1 class="titulo-h2">Novo Relato</h1>
+        <h1 class="titulo-h2">Nova <span class="caixa-laranja"><?= $tipoRelato; ?></span></h1>
             <form method="post" class="form-dados">
                 
                 <div class="form-control form-one-row">
                     <span class="form-titulo">Data de abertura</span>
-                    <span class="form-titulo">Tipo</span>
                     <span class="form-titulo">Status</span>
                 </div>
 
                 <div class="form-one-row">
                     <span class="form-texto-span"><?= $dataAbertura; ?></span>
-                    <span class="form-texto-span"><?= $tipoRelato; ?></span>
                     <span class="form-texto-span">Aberto</span>
                 </div>
 
@@ -79,7 +77,7 @@
         
     </main>
     <footer>
-        <p>Desenvolvido para <span class="footer-etc">ETC</span> <span class="footer-ano"> 2024</span></p>
+        <p>Desenvolvido para <span class="caixa-azul">ETC</span> <span class="caixa-laranja"> 2024</span></p>
     </footer>
 </body>
 

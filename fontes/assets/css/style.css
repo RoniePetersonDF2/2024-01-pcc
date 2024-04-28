@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
-@import url('buttons.css');
-@import url('tabelas.css');
-@import url('responsividade.css');
-@import url('forms.css');
+@import url("buttons.css");
+@import url("tabelas.css");
+@import url("responsividade.css");
+@import url("forms.css");
 :root {
     --cor--primaria: #203b4e;
     --cor--laranja: coral;
@@ -13,7 +13,8 @@
     --cor--verde: #118d47;
     --cor--cinza: gainsboro;
     --cor--branco: #fff;
-    --cor-amarelo: #FFBF00;
+    --cor-amarelo: #ffbf00;
+    --cor-grafite: #514e4e;
 }
 
 * {
@@ -33,6 +34,7 @@ a {
     color: #000;
     font-weight: 600;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -44,6 +46,7 @@ header {
 header img {
     width: 100px;
 }
+
 header h1 {
     color: var(--cor--azul);
     margin-left: 20px;
@@ -52,9 +55,11 @@ header h1 {
 header span {
     color: var(--cor--secundaria);
 }
+
 header a {
     display: flex;
 }
+
 main {
     margin: 0 50px;
 }
@@ -71,10 +76,26 @@ main {
     padding: 20px;
 }
 
+.section-left h2 {
+    text-align: justify;
+}
+
 .section-left p {
     font-size: 1.2rem;
     text-align: justify;
     margin: 3em 0;
+}
+
+.section-left ul {
+    list-style: none;
+}
+
+.section-left li {
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: var(--cor-grafite);
+    text-indent: 50px;
+    text-align: justify;
 }
 
 .section-right {
@@ -133,14 +154,14 @@ footer p {
     margin: 2px 30px;
 }
 
-.footer-etc {
+.caixa-azul {
     font-weight: 900;
     color: var(--cor--azul);
 }
 
-.footer-ano {
+.caixa-laranja {
     color: var(--cor--laranja);
-    font-weight: 600;
+    font-weight: 900;
 }
 
 @media (width > 1370px) {
@@ -157,6 +178,11 @@ footer p {
     .section-left p {
         font-size: 1em;
         margin: 0 0 15px 0;
+    }
+
+    .section-left li {
+        font-size: 0.9em;
+        text-indent: 0px;
     }
 
     .section-right {
@@ -212,11 +238,11 @@ footer p {
     .titulo-h2 {
         font-size: 2em;
     }
-    
+
     .texto {
         width: 90%;
     }
-    
+
     .btn {
         display: block;
         width: 98%;

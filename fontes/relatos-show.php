@@ -28,7 +28,7 @@ if ($relato === false) {
     <header>
         <a href="index.php">
             <img src="assets/img/logoetc.png" alt="Imagem logo etc">
-            <h1>Ouvir <span>ETC</span></h1>
+            <h1>Ouvir <span class="caixa-laranja">ETC</span></h1>
         </a>
     </header>
 
@@ -53,7 +53,7 @@ if ($relato === false) {
     </main>
     <br>
     <footer>
-        <p>Desenvolvido para <span class="footer-etc">ETC</span> <span class="footer-ano"> 2024</span></p>
+        <p>Desenvolvido para <span class="caixa-azul">ETC</span> <span class="caixa-laranja"> 2024</span></p>
     </footer>
 </body>
 
