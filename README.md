@@ -22,4 +22,4 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 - [Tecnologias e ferramentas](/documentos/tecnologias-ferramentas.md)
 
 ## Como fazer a implantação
-- [Veja aqui](implantacao.md)
+- [Implantação](/documentos/implantacao.md)
