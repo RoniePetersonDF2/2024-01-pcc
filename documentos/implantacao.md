@@ -14,4 +14,4 @@ Projeto de exemplo criado e disponibilizado pelos professores de LV-II e DIWEB p
 3. Descompactar o arquivo pcc_sample_2023_02.zip
 4. Apagar o arquivo pcc_sample_2023_02.zip
 
-### 3 - [Voltar](./README.md)
+### 3 - [Voltar](../README.md)
