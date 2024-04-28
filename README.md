@@ -16,7 +16,7 @@ Esse projeto possui perfis de acesso ao sistema. Onde cada um deles permite exec
 - CRUD de avaliação dos relatos
 
 ## Diagramas
-- [Diagramas](/documentos/README.md)
+- [Diagramas](/documentos/diagramas.md)
 
 ## Tecnologias e Ferramentas de desenvolvimento
 - [Tecnologias e ferramentas](/documentos/tecnologias-ferramentas.md)
