@@ -1,7 +1,7 @@
 <?php
 $dsn = 'mysql:host=localhost;dbname=ouvir_etc_db;charset=utf8;';
 $conn = new PDO($dsn, 'root', '');
-$query = 'SELECT * FROM ouvir_etc_db.relatos;';
+$query = 'SELECT * FROM ouvir_etc_db.relatos ORDER BY dataabertura desc, tipo;';
 $stmt = $conn->query($query);
 $relatos = $stmt->fetchAll(pdo::FETCH_BOTH);
 $count = 0;
@@ -19,15 +19,11 @@ $count = 0;
     <header>
         <a href="index.php">
             <img src="assets/img/logoetc.png" alt="Imagem logo etc">
-            <h1>Ouvir <span>ETC</span></h1>
+            <h1>Ouvir <span class="caixa-laranja">ETC</span></h1>
         </a>
     </header>
 
     <main>
-        <p class="btn-align">
-            <a href="#" class="btn btn-novo">Novo</a>
-        </p>
-
         <table>
             <thead>
                 <tr>
@@ -52,7 +48,7 @@ $count = 0;
                             <td class="texto-esquerda"><?= $relato['titulo']; ?></td>
                             <td><?= $relato['tipo']; ?></td>
                             <td>
-                                <a href="relatos-detalhes.php?id=<?= $relato['id']?>">Detalhes</a>
+                                <a href="relatos-show.php?id=<?= $relato['id']?>"><span class="caixa-laranja">Detalhes</span></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -61,7 +57,7 @@ $count = 0;
         </table>
     </main>
     <footer>
-        <p>Desenvolvido para <span class="footer-etc">ETC</span> <span class="footer-ano"> 2024</span></p>
+        <p>Desenvolvido para <span class="caixa-azul">ETC</span> <span class="caixa-laranja"> 2024</span></p>
     </footer>
 </body>
 
