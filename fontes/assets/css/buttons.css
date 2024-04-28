@@ -1,0 +1,38 @@
+.btn {
+    border: none;
+    padding: 15px 95px;
+    border-radius: 8px;
+    background-color: var(--cor--azul);
+    color: var(--cor--branco);
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: center;
+}
+.btn-elogio {
+    background-color: var(--cor--laranja);
+}
+
+.btn-reclamacao {
+    background-color: var(--cor--vermelho);
+}
+
+.btn-relato {
+    background-color: var(--cor--verde);
+}
+
+.btn-voltar {
+    background-color: var(--cor--amarelo);
+}
+
+.btn-relato-extendido {
+    display: block;
+    margin-top: 1.2em;
+}
+
+.btn-align {
+    text-align: right;
+}
+
+.btn-salvar {
+    background-color: var(--cor--verde);    
+}

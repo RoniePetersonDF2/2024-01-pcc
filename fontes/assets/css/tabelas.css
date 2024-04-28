@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+td,
+th {
+    border: 1px solid var(--cor--azul);
+    text-align: center;
+    padding: 8px;
+}
+
+.texto-esquerda {
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: var(--cor--azul-claro);
+}
