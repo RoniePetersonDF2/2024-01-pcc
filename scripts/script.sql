@@ -5,7 +5,7 @@ CREATE DATABASE ouvir_etc_db;
 USE ouvir_etc_db;
 
 CREATE TABLE ouvir_etc_db.usuarios (
-id int PRIMARY KEY not null,
+id int PRIMARY KEY not null auto_increment,
 nome varchar(150) not null,
 email varchar(200) not null unique,
 password varchar(80) not null,
@@ -13,7 +13,7 @@ tipousuario ENUM('ADMIN', 'USUARIO', 'ANALISTA') NOT NULL DEFAULT('USUARIO'),
 statususuario boolean DEFAULT(true)
 );
 CREATE TABLE ouvir_etc_db.relatos (
-id int PRIMARY KEY not null,
+id int PRIMARY KEY not null auto_increment,
     dataabertura datetime not null,
     dataconclusao datetime null,
     titulo varchar(100) not null,
@@ -26,7 +26,7 @@ usuarioid int null,
 );
 
 CREATE TABLE ouvir_etc_db.respostas (
-	id int PRIMARY KEY not null,
+	id int PRIMARY KEY not null auto_increment,
     dataaresposta datetime not null,
     descricao text,
     statusResposta boolean,
