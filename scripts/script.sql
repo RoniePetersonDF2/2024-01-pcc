@@ -27,11 +27,10 @@ usuarioid int null,
 
 CREATE TABLE ouvir_etc_db.respostas (
 	id int PRIMARY KEY not null auto_increment,
-    dataaresposta datetime not null,
+    dataresposta datetime not null,
     descricao text,
     statusResposta boolean,
-    anexo varchar(255) null,
-	usuarioid int null,
+    usuarioid int null,
     relatoid int not null,
     FOREIGN KEY (usuarioid) REFERENCES ouvir_etc_db.usuarios(id),
     FOREIGN KEY (relatoid) REFERENCES ouvir_etc_db.relatos(id)
