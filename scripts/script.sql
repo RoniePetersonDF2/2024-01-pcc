@@ -29,7 +29,7 @@ CREATE TABLE ouvir_etc_db.respostas (
 	id int PRIMARY KEY not null auto_increment,
     dataresposta datetime not null,
     descricao text,
-    statusResposta boolean,
+    statusresposta boolean,
     usuarioid int null,
     relatoid int not null,
     FOREIGN KEY (usuarioid) REFERENCES ouvir_etc_db.usuarios(id),
